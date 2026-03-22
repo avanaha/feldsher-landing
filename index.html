@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Безопасность -->
+    <!-- Безопасность: HTTP-заголовки через meta-теги -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://t.me https://max.ru https://vk.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none';">
     
-    <!-- Ускорение загрузки -->
+    <!-- Ускорение загрузки: preconnect для шрифтов -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- SEO -->
-    <title>Работа фельдшером в Ижевске | Вакансии | ФЕЛЬДШЕРЪ.РЯДОМ.</title>
-    <meta name="description" content="Вакансия фельдшера в Ижевске. Официальное трудоустройство, зарплата от 42 000 до 50 000 ₽, смены по 5 часов. Совмещение возможно.">
-    <meta name="keywords" content="работа фельдшером Ижевск, вакансия фельдшера, работа медработника, фельдшер скорая помощь">
+    <!-- SEO Мета-теги -->
+    <title>Фельдшерский кабинет по подписке в Ижевске | ФЕЛЬДШЕРЪ.РЯДОМ.</title>
+    <meta name="description" content="Первый фельдшерский кабинет по подписке в Ижевске. Доврачебная помощь в Индустриальном районе. Абонементы от 500 ₽/мес. ЭКГ, консультации, измерения — без очередей.">
+    <meta name="keywords" content="фельдшер Ижевск, доврачебная помощь, медицинская помощь по подписке, ЭКГ Ижевск, фельдшерский кабинет, медицинский абонемент, Индустриальный район Ижевск, медицинская помощь на дому">
     <meta name="author" content="Фельдшер и компания">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://feldsher-land.ru/feldshers.html">
+    <link rel="canonical" href="https://feldsher-land.ru/">
     
-    <!-- Open Graph -->
+    <!-- Open Graph для соцсетей -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Работа фельдшером в Ижевске — Вакансии">
-    <meta property="og:description" content="Вакансия фельдшера в Ижевске. Зарплата от 42 000 до 50 000 ₽, смены по 5 часов.">
-    <meta property="og:url" content="https://feldsher-land.ru/feldshers.html">
+    <meta property="og:title" content="Фельдшерский кабинет по подписке в Ижевске">
+    <meta property="og:description" content="Первый фельдшерский кабинет по подписке в Ижевске. Доврачебная помощь в Индустриальном районе. Абонементы от 500 ₽/мес.">
+    <meta property="og:url" content="https://feldsher-land.ru/">
     <meta property="og:site_name" content="ФЕЛЬДШЕРЪ.РЯДОМ.">
     <meta property="og:locale" content="ru_RU">
     
-    <!-- Гео-теги -->
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Фельдшерский кабинет по подписке в Ижевске">
+    <meta name="twitter:description" content="Первый фельдшерский кабинет по подписке в Ижевске. Доврачебная помощь в Индустриальном районе.">
+    
+    <!-- Гео-теги для локального SEO -->
     <meta name="geo.region" content="RU-UD">
     <meta name="geo.placename" content="Ижевск">
     <meta name="geo.position" content="56.8526;53.2115">
@@ -39,23 +44,46 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>Ф</text></svg>">
     
-    <!-- Шрифт -->
+    <!-- Шрифт с font-display: swap для быстрой загрузки -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Schema.org -->
+    <!-- Структурированные данные Schema.org -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "JobPosting",
-        "title": "Фельдшер",
-        "description": "Приглашаем фельдшеров в команду первого фельдшерского кабинета по подписке в Ижевске.",
-        "datePosted": "2026-03-15",
-        "validThrough": "2026-12-31",
-        "employmentType": ["PART_TIME", "FULL_TIME"],
-        "hiringOrganization": {"@type": "Organization", "name": "ФЕЛЬДШЕРЪ.РЯДОМ.", "sameAs": "https://max.ru/id1800048162_1_bot"},
-        "jobLocation": {"@type": "Place", "address": {"@type": "PostalAddress", "addressLocality": "Ижевск", "addressRegion": "Удмуртская Республика", "addressCountry": "RU"}},
-        "baseSalary": {"@type": "MonetaryAmount", "currency": "RUB", "value": {"@type": "QuantitativeValue", "minValue": 42000, "maxValue": 50000, "unitText": "MONTH"}},
-        "workHours": "5 часов в смену"
+        "@type": "MedicalBusiness",
+        "name": "ФЕЛЬДШЕРЪ.РЯДОМ.",
+        "description": "Первый фельдшерский кабинет по подписке в Ижевске. Доврачебная помощь в Индустриальном районе.",
+        "url": "https://feldsher-land.ru",
+        "telephone": "+7-965-843-78-18",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ижевск",
+            "addressRegion": "Удмуртская Республика",
+            "addressCountry": "RU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "56.8526",
+            "longitude": "53.2115"
+        },
+        "openingHours": "Mo-Fr 07:00-21:00, Su 10:00-15:00",
+        "priceRange": "500-1500",
+        "areaServed": {
+            "@type": "Place",
+            "name": "Индустриальный район, Ижевск"
+        },
+        "medicalSpecialty": "Доврачебная помощь",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Абонементы",
+            "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Абонемент для пенсионеров"}, "price": "700", "priceCurrency": "RUB"},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Абонемент для взрослых"}, "price": "900", "priceCurrency": "RUB"},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Абонемент для детей"}, "price": "500", "priceCurrency": "RUB"},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Семейный абонемент"}, "price": "1500", "priceCurrency": "RUB"}
+            ]
+        }
     }
     </script>
     
@@ -72,15 +100,16 @@
         /* Навигация */
         nav { position: relative; z-index: 50; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid #e5e5e5; padding: 12px 0; }
         .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 16px; display: flex; justify-content: space-between; align-items: center; }
-        .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
+        .logo { display: flex; align-items: center; gap: 10px; }
         .logo-icon { width: 40px; height: 40px; border-radius: 10px; background: linear-gradient(135deg, #722F37 0%, #1E3A5F 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 18px; flex-shrink: 0; }
-        .logo-text h1 { font-size: 16px; font-weight: bold; }
+        .logo-text h1 { font-size: 16px; font-weight: bold; line-height: 1.2; }
         .logo-text p { font-size: 11px; color: #666; }
         .nav-buttons { display: flex; gap: 6px; background: #f1f1f1; padding: 4px; border-radius: 10px; }
         .nav-btn { padding: 6px 12px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 14px; transition: all 0.2s; color: #666; white-space: nowrap; }
-        .nav-btn.active { background: linear-gradient(135deg, #1E3A5F 0%, #2D4A6F 100%); color: white; }
+        .nav-btn.active { background: linear-gradient(135deg, #722F37 0%, #8B3A44 100%); color: white; }
         .nav-btn:hover { background: white; }
         
+        /* Бургер-меню для мобильных */
         .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: #f1f1f1; border-radius: 8px; }
         .burger span { width: 24px; height: 3px; background: #666; border-radius: 2px; transition: all 0.3s; }
         .burger.active span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
@@ -92,90 +121,102 @@
             .nav-buttons.open { display: flex; }
             .burger { display: flex; }
             .nav-btn { padding: 10px 16px; text-align: center; background: #f5f5f5; }
-            .nav-btn.active { background: linear-gradient(135deg, #1E3A5F 0%, #2D4A6F 100%); }
+            .nav-btn.active { background: linear-gradient(135deg, #722F37 0%, #8B3A44 100%); }
         }
         
-        /* Hero */
+        /* Hero секция */
         .hero { padding: 48px 16px; }
         .hero-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
-        @media (max-width: 900px) { .hero-container { grid-template-columns: 1fr; } }
+        @media (max-width: 900px) { .hero-container { grid-template-columns: 1fr; gap: 24px; } }
         
-        .badge { display: inline-block; background: linear-gradient(135deg, #1E3A5F 0%, #2D4A6F 100%); color: white; padding: 6px 14px; border-radius: 20px; font-size: 13px; margin-bottom: 12px; }
-        .hero-title { font-size: 32px; font-weight: bold; line-height: 1.2; margin-bottom: 16px; }
+        .badge { display: inline-block; background: linear-gradient(135deg, #722F37 0%, #1E3A5F 100%); color: white; padding: 6px 14px; border-radius: 20px; font-size: 13px; margin-bottom: 12px; }
+        .hero-title { font-size: 36px; font-weight: bold; line-height: 1.2; margin-bottom: 16px; }
         .hero-text { color: #666; font-size: 16px; margin-bottom: 20px; }
-        .btn-primary { background: linear-gradient(135deg, #1E3A5F 0%, #2D4A6F 100%); color: white; padding: 14px 24px; border-radius: 10px; text-decoration: none; font-weight: 500; font-size: 15px; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 8px 24px rgba(30,58,95,0.25); transition: all 0.2s; }
-        .btn-primary:hover { box-shadow: 0 12px 32px rgba(30,58,95,0.35); transform: translateY(-2px); }
+        .hero-text span { color: #1a1a2e; font-weight: 600; }
+        .buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+        .btn-primary { background: linear-gradient(135deg, #722F37 0%, #8B3A44 100%); color: white; padding: 14px 24px; border-radius: 10px; text-decoration: none; font-weight: 500; font-size: 15px; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 8px 24px rgba(114,47,55,0.25); transition: all 0.2s; }
+        .btn-primary:hover { box-shadow: 0 12px 32px rgba(114,47,55,0.35); transform: translateY(-2px); }
+        .btn-secondary { background: white; border: 2px solid #e5e5e5; padding: 12px 20px; border-radius: 10px; text-decoration: none; font-weight: 500; font-size: 15px; color: #333; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s; }
+        .btn-secondary:hover { border-color: #722F37; }
         
         @media (max-width: 600px) {
             .hero { padding: 32px 12px; }
-            .hero-title { font-size: 24px; }
+            .hero-title { font-size: 26px; }
             .hero-text { font-size: 15px; }
-            .btn-primary { padding: 12px 20px; font-size: 14px; }
+            .btn-primary, .btn-secondary { padding: 12px 18px; font-size: 14px; width: 100%; justify-content: center; }
         }
         
-        .search-card { background: white; border-radius: 16px; padding: 24px; border: 2px solid rgba(30,58,95,0.15); box-shadow: 0 4px 16px rgba(0,0,0,0.05); }
-        .search-card h3 { font-size: 16px; font-weight: bold; margin-bottom: 16px; }
-        .search-item { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
-        .search-item:last-child { margin-bottom: 0; }
-        .search-item .emoji { font-size: 20px; flex-shrink: 0; }
-        .search-item p { color: #666; font-size: 14px; }
+        /* Pricing */
+        .pricing { margin-top: 8px; }
+        .pricing-title { text-align: center; font-size: 13px; color: #666; margin-bottom: 12px; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+        .price-card { background: white; border-radius: 12px; padding: 16px; text-align: center; border: 1px solid #e5e5e5; transition: all 0.2s; }
+        .price-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(114,47,55,0.1); }
+        .price-card.featured { border: 2px solid #722F37; position: relative; }
+        .price-card .badge-small { position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: #722F37; color: white; font-size: 11px; padding: 3px 10px; border-radius: 10px; }
+        .price-card .emoji { font-size: 28px; margin-bottom: 6px; }
+        .price-card .title { font-weight: 500; font-size: 13px; margin-bottom: 2px; }
+        .price-card .subtitle { font-size: 11px; color: #666; margin-bottom: 2px; }
+        .price-card .price { font-size: 20px; font-weight: bold; color: #722F37; }
+        .price-card .price span { font-size: 12px; font-weight: normal; color: #666; }
         
-        /* Section */
+        @media (max-width: 400px) {
+            .pricing-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+            .price-card { padding: 12px 8px; }
+            .price-card .emoji { font-size: 24px; }
+            .price-card .price { font-size: 18px; }
+        }
+        
+        /* Секции */
         .section { padding: 48px 16px; }
         .section-gray { background: #f5f5f5; }
         .section-container { max-width: 1200px; margin: 0 auto; }
         .section-title { font-size: 26px; font-weight: bold; text-align: center; margin-bottom: 8px; }
-        .section-subtitle { text-align: center; color: #666; margin-bottom: 32px; font-size: 15px; }
+        .section-subtitle { text-align: center; color: #666; margin-bottom: 32px; font-size: 16px; }
         
         @media (max-width: 600px) {
             .section { padding: 32px 12px; }
             .section-title { font-size: 22px; }
+            .section-subtitle { font-size: 14px; margin-bottom: 24px; }
         }
         
-        /* Salary */
-        .salary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
-        @media (max-width: 700px) { .salary-grid { grid-template-columns: 1fr; } }
-        .salary-card { background: white; border-radius: 16px; padding: 24px; border: 2px solid transparent; transition: all 0.2s; position: relative; overflow: hidden; }
-        .salary-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
-        .salary-card.burgundy:hover { border-color: rgba(114,47,55,0.2); }
-        .salary-card.blue:hover { border-color: rgba(30,58,95,0.2); }
-        .salary-card .corner { position: absolute; top: 0; right: 0; width: 80px; height: 80px; border-radius: 0 0 0 80px; }
-        .salary-card.burgundy .corner { background: rgba(114,47,55,0.05); }
-        .salary-card.blue .corner { background: rgba(30,58,95,0.05); }
-        .salary-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; position: relative; }
-        .salary-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
-        .salary-header h3 { font-size: 17px; font-weight: bold; }
-        .salary-header p { font-size: 13px; color: #666; }
-        .salary-amount { font-size: 32px; font-weight: bold; margin-bottom: 4px; }
-        .salary-card.burgundy .salary-amount { color: #722F37; }
-        .salary-card.blue .salary-amount { color: #1E3A5F; }
-        .salary-period { color: #666; margin-bottom: 12px; font-size: 14px; }
-        .salary-tags { display: flex; gap: 6px; flex-wrap: wrap; }
-        .salary-tag { background: #f1f1f1; padding: 5px 10px; border-radius: 6px; font-size: 12px; }
+        /* Features */
+        .features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+        @media (max-width: 900px) { .features { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .features { grid-template-columns: 1fr 1fr; gap: 12px; } }
+        .feature-card { background: white; border-radius: 12px; padding: 20px; text-align: center; transition: all 0.2s; }
+        .feature-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+        .feature-icon { width: 52px; height: 52px; margin: 0 auto 12px; border-radius: 12px; background: linear-gradient(135deg, #722F37 0%, #1E3A5F 100%); display: flex; align-items: center; justify-content: center; font-size: 24px; }
+        .feature-card h3 { font-weight: bold; font-size: 15px; margin-bottom: 6px; }
+        .feature-card p { font-size: 13px; color: #666; line-height: 1.4; }
         
         @media (max-width: 600px) {
-            .salary-card { padding: 18px; }
-            .salary-amount { font-size: 28px; }
+            .feature-card { padding: 14px 10px; }
+            .feature-icon { width: 44px; height: 44px; font-size: 20px; margin-bottom: 8px; }
+            .feature-card h3 { font-size: 14px; }
+            .feature-card p { font-size: 12px; }
         }
         
-        .official { text-align: center; }
-        .official-badge { display: inline-block; background: white; border: 1px solid #e5e5e5; padding: 10px 18px; border-radius: 8px; font-size: 13px; }
-        
-        /* Benefits */
-        .benefits { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-        @media (max-width: 900px) { .benefits { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 600px) { .benefits { grid-template-columns: 1fr 1fr; gap: 10px; } }
-        .benefit-card { background: white; border-radius: 12px; padding: 20px; transition: all 0.2s; text-align: center; }
-        .benefit-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
-        .benefit-icon { width: 48px; height: 48px; border-radius: 10px; background: linear-gradient(135deg, #1E3A5F 0%, #2D4A6F 100%); display: flex; align-items: center; justify-content: center; font-size: 22px; margin: 0 auto 12px; }
-        .benefit-card h3 { font-weight: bold; font-size: 14px; margin-bottom: 4px; }
-        .benefit-card p { font-size: 13px; color: #666; }
+        /* Info grid */
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        @media (max-width: 900px) { .info-grid { grid-template-columns: 1fr; } }
+        .info-card { background: white; border-radius: 12px; padding: 24px; border: 2px solid transparent; transition: all 0.2s; }
+        .info-card:hover { border-color: #722F37; transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+        .info-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+        .info-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+        .info-card h3 { font-size: 18px; font-weight: bold; }
+        .info-card .text { color: #666; margin-bottom: 12px; font-size: 15px; }
+        .info-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+        .info-tag { background: #f1f1f1; padding: 6px 12px; border-radius: 6px; font-size: 13px; }
+        .info-list-item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #e5e5e5; font-size: 15px; }
+        .info-list-item:last-child { border-bottom: none; }
+        .info-list-item .price { font-weight: bold; color: #722F37; }
         
         @media (max-width: 600px) {
-            .benefit-card { padding: 14px 10px; }
-            .benefit-icon { width: 40px; height: 40px; font-size: 18px; margin-bottom: 8px; }
-            .benefit-card h3 { font-size: 13px; }
-            .benefit-card p { font-size: 12px; }
+            .info-card { padding: 18px; }
+            .info-card h3 { font-size: 16px; }
+            .info-card .text { font-size: 14px; }
+            .info-list-item { font-size: 14px; }
         }
         
         /* CTA */
@@ -183,32 +224,45 @@
         .cta-card { max-width: 720px; margin: 0 auto; border-radius: 20px; overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.12); }
         .cta-border { background: linear-gradient(135deg, #722F37 0%, #1E3A5F 100%); padding: 3px; }
         .cta-content { background: white; padding: 40px 32px; text-align: center; border-radius: 17px; }
-        .cta h2 { font-size: 26px; font-weight: bold; margin-bottom: 10px; }
-        .cta p { color: #666; margin-bottom: 20px; font-size: 15px; }
-        .cta .link { margin-top: 14px; font-size: 13px; color: #666; }
-        .cta .link a { color: #1E3A5F; font-weight: 500; }
+        .cta h2 { font-size: 28px; font-weight: bold; margin-bottom: 10px; }
+        .cta p { color: #666; margin-bottom: 20px; font-size: 16px; }
+        .cta .link { margin-top: 16px; font-size: 13px; color: #666; }
+        .cta .link a { color: #722F37; font-weight: 500; }
         
         @media (max-width: 600px) {
             .cta { padding: 40px 12px; }
             .cta-content { padding: 28px 20px; }
             .cta h2 { font-size: 22px; }
+            .cta p { font-size: 15px; }
         }
         
         /* Footer */
         footer { padding: 28px 16px; border-top: 1px solid #e5e5e5; background: #1a1a2e; text-align: center; color: white; }
         footer p { margin-bottom: 8px; font-size: 13px; }
-        footer a { color: #ccc; text-decoration: none; }
+        footer a { color: #ccc; text-decoration: none; transition: color 0.2s; }
         footer a:hover { color: white; }
         .footer-links { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 12px; font-size: 13px; }
         .footer-links span { color: #555; }
         
-        /* Blobs */
+        @media (max-width: 600px) {
+            footer { padding: 24px 12px; }
+            .footer-links { gap: 8px; font-size: 12px; }
+        }
+        
+        /* Blobs - отключаем на мобильных и для экономии ресурсов */
         .blob1, .blob2, .blob3 { position: fixed; border-radius: 50%; filter: blur(60px); opacity: 0.3; pointer-events: none; z-index: 0; animation: pulse 4s ease-in-out infinite; will-change: opacity; }
         .blob1 { top: 10%; left: 5%; width: 250px; height: 250px; background: #722F37; }
         .blob2 { top: 20%; right: 10%; width: 300px; height: 300px; background: #1E3A5F; animation-delay: 2s; }
-        .blob3 { bottom: 10%; left: 30%; width: 250px; height: 250px; background: #2D4A6F; animation-delay: 4s; }
+        .blob3 { bottom: 10%; left: 30%; width: 250px; height: 250px; background: #8B3A44; animation-delay: 4s; }
         @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.5; } }
-        @media (max-width: 768px), (prefers-reduced-motion: reduce) { .blob1, .blob2, .blob3 { display: none; } }
+        
+        /* Отключаем blobs на мобильных и при prefers-reduced-motion */
+        @media (max-width: 768px), (prefers-reduced-motion: reduce) {
+            .blob1, .blob2, .blob3 { display: none; }
+        }
+        
+        /* Утилиты */
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
     </style>
 </head>
 <body>
@@ -218,7 +272,7 @@
 
     <nav role="navigation" aria-label="Главное меню">
         <div class="nav-container">
-            <a href="index.html" class="logo">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
                 <div class="logo-icon" aria-hidden="true">Ф</div>
                 <div class="logo-text">
                     <h1>ФЕЛЬДШЕРЪ.РЯДОМ.</h1>
@@ -226,11 +280,13 @@
                 </div>
             </a>
             <div class="nav-buttons" id="navButtons">
-                <a href="index.html" class="nav-btn">🏥 Для пациентов</a>
-                <a href="feldshers.html" class="nav-btn active" aria-current="page">👩‍⚕️ Для фельдшеров</a>
+                <a href="index.html" class="nav-btn active" aria-current="page">🏥 Для пациентов</a>
+                <a href="feldshers.html" class="nav-btn">👩‍⚕️ Для фельдшеров</a>
             </div>
-            <div class="burger" id="burger" onclick="toggleMenu()" aria-label="Меню" role="button" tabindex="0">
-                <span></span><span></span><span></span>
+            <div class="burger" id="burger" onclick="toggleMenu()" aria-label="Открыть меню" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
@@ -239,88 +295,99 @@
         <section class="hero" aria-labelledby="hero-title">
             <div class="hero-container">
                 <div>
-                    <span class="badge">🚀 Скоро открытие в Ижевске</span>
-                    <h2 id="hero-title" class="hero-title">Проект «Фельдшеръ.Рядом» <span class="text-gradient">приглашает в команду</span></h2>
-                    <p class="hero-text">Мы открываем кабинет в одном из районов Ижевска и хотим, чтобы наши сотрудники работали с удовольствием, а не до изнеможения.</p>
-                    <a href="https://max.ru/id1800048162_1_bot" target="_blank" rel="noopener" class="btn-primary">📤 Отправить резюме</a>
+                    <span class="badge">✨ Первый в Ижевске</span>
+                    <h2 id="hero-title" class="hero-title">Фельдшерский кабинет <span class="text-gradient">по подписке</span></h2>
+                    <p class="hero-text">Доврачебная помощь в вашем районе Ижевска по фиксированной ежемесячной цене. <span>Платите один раз — обращайтесь столько, сколько нужно.</span></p>
+                    <div class="buttons">
+                        <a href="https://max.ru/id1800048162_1_bot" target="_blank" rel="noopener" class="btn-primary">📝 Записаться</a>
+                        <a href="https://max.ru/join/56sp6ngnZou3IeaUAUqfiopUefYBUMacUwg1ExkHAa8" target="_blank" rel="noopener" class="btn-secondary">💬 Канал</a>
+                    </div>
                 </div>
-                <article class="search-card">
-                    <h3>Мы ищем фельдшеров, которые:</h3>
-                    <ul style="list-style: none;">
-                        <li class="search-item"><span class="emoji" aria-hidden="true">😫</span><p>устали от 12‑часовых смен и бесконечной отчётности</p></li>
-                        <li class="search-item"><span class="emoji" aria-hidden="true">💰</span><p>хотят достойно зарабатывать и иметь время на жизнь</p></li>
-                        <li class="search-item"><span class="emoji" aria-hidden="true">💚</span><p>разделяют наши ценности: уважение к пациентам и честность</p></li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <section class="section section-gray" aria-labelledby="salary-title">
-            <div class="section-container">
-                <h2 id="salary-title" class="section-title">График и оплата</h2>
-                <p class="section-subtitle">🕖 Смены: утро (7:00–12:00), день (12:00–17:00), вечер (16:00–21:00)</p>
-                <div class="salary-grid">
-                    <article class="salary-card burgundy">
-                        <div class="corner" aria-hidden="true"></div>
-                        <div class="salary-header">
-                            <div class="salary-icon bg-burgundy" aria-hidden="true">🌅</div>
-                            <div>
-                                <h3>Основные фельдшеры</h3>
-                                <p>🕖 Утро, день, вечер</p>
-                            </div>
-                        </div>
-                        <div class="salary-amount">💰 50 000 ₽</div>
-                        <p class="salary-period">на руки в месяц</p>
-                        <div class="salary-tags">
-                            <span class="salary-tag">🕐 16 смен по 5 часов</span>
-                        </div>
-                    </article>
-                    <article class="salary-card blue">
-                        <div class="corner" aria-hidden="true"></div>
-                        <div class="salary-header">
-                            <div class="salary-icon bg-blue" aria-hidden="true">☀️</div>
-                            <div>
-                                <h3>Воскресный фельдшер</h3>
-                                <p>🕖 День (10:00–15:00) и подмены</p>
-                            </div>
-                        </div>
-                        <div class="salary-amount">💰 42 000 ₽</div>
-                        <p class="salary-period">на руки в месяц</p>
-                        <div class="salary-tags">
-                            <span class="salary-tag">🕐 12 смен по 5 часов</span>
-                        </div>
-                    </article>
-                </div>
-                <div class="official">
-                    <span class="official-badge">✓ Официальное трудоустройство по ТК РФ, полный соцпакет</span>
+                <div class="pricing">
+                    <p class="pricing-title">Абонементы</p>
+                    <div class="pricing-grid" role="list">
+                        <article class="price-card" role="listitem">
+                            <div class="emoji" aria-hidden="true">👵</div>
+                            <p class="title">Пенсионеры</p>
+                            <p class="price">700 ₽<span>/мес</span></p>
+                        </article>
+                        <article class="price-card" role="listitem">
+                            <div class="emoji" aria-hidden="true">👨</div>
+                            <p class="title">Взрослые</p>
+                            <p class="price">900 ₽<span>/мес</span></p>
+                        </article>
+                        <article class="price-card" role="listitem">
+                            <div class="emoji" aria-hidden="true">👧</div>
+                            <p class="title">Дети</p>
+                            <p class="price">500 ₽<span>/мес</span></p>
+                        </article>
+                        <article class="price-card featured" role="listitem">
+                            <span class="badge-small">Выгодно</span>
+                            <div class="emoji" aria-hidden="true">👪</div>
+                            <p class="title">Семейный</p>
+                            <p class="subtitle">2+1</p>
+                            <p class="price">1 500 ₽<span>/мес</span></p>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" aria-labelledby="benefits-title">
+        <section class="section section-gray" aria-labelledby="features-title">
             <div class="section-container">
-                <h2 id="benefits-title" class="section-title">Что мы предлагаем</h2>
-                <p class="section-subtitle">Человеческие условия работы для профессионалов</p>
-                <div class="benefits">
-                    <article class="benefit-card">
-                        <div class="benefit-icon" aria-hidden="true">📄</div>
-                        <h3>Официальное оформление</h3>
-                        <p>ТК РФ, стаж, соцпакет</p>
+                <h2 id="features-title" class="section-title">Что входит в абонемент</h2>
+                <p class="section-subtitle">Неограниченный доступ к медицинским услугам</p>
+                <div class="features">
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">🩺</div>
+                        <h3>Приёмы</h3>
+                        <p>Без ограничений</p>
                     </article>
-                    <article class="benefit-card">
-                        <div class="benefit-icon" aria-hidden="true">🤝</div>
-                        <h3>Совмещение</h3>
-                        <p>Совмещайте с основной работой</p>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">❤️</div>
+                        <h3>ЭКГ</h3>
+                        <p>1 раз в месяц</p>
                     </article>
-                    <article class="benefit-card">
-                        <div class="benefit-icon" aria-hidden="true">🩺</div>
-                        <h3>Современное оборудование</h3>
-                        <p>Минимум бумажной работы</p>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">📊</div>
+                        <h3>Измерения</h3>
+                        <p>Давление, сатурация</p>
                     </article>
-                    <article class="benefit-card">
-                        <div class="benefit-icon" aria-hidden="true">💚</div>
-                        <h3>Дружный коллектив</h3>
-                        <p>Поддержка и уважение</p>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">💬</div>
+                        <h3>Консультации</h3>
+                        <p>Ответы на вопросы</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="info-title">
+            <div class="section-container">
+                <h2 id="info-title" class="sr-only">График работы и цены</h2>
+                <div class="info-grid">
+                    <article class="info-card">
+                        <div class="info-header">
+                            <div class="info-icon bg-burgundy" aria-hidden="true">🕐</div>
+                            <h3>Удобный график</h3>
+                        </div>
+                        <p class="text">Приходите без очередей и талонов — мы работаем утром, днём и вечером</p>
+                        <div class="info-tags">
+                            <span class="info-tag">Будни: 07:00–21:00</span>
+                            <span class="info-tag">Воскресенье: 10:00–15:00</span>
+                        </div>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-header">
+                            <div class="info-icon bg-blue" aria-hidden="true">🎟️</div>
+                            <h3>Разовый приём</h3>
+                        </div>
+                        <p class="text">Нужна помощь один раз? Добро пожаловать без абонемента!</p>
+                        <div class="info-list">
+                            <div class="info-list-item"><span>Первичный осмотр</span><span class="price">1 000 ₽</span></div>
+                            <div class="info-list-item"><span>ЭКГ</span><span class="price">500 ₽</span></div>
+                            <div class="info-list-item"><span>Уколы</span><span class="price">от 300 ₽</span></div>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -330,10 +397,10 @@
             <div class="cta-card">
                 <div class="cta-border">
                     <div class="cta-content">
-                        <h2 id="cta-title">Присоединяйтесь к нашей команде!</h2>
-                        <p>Отправьте резюме, и мы свяжемся с вами</p>
-                        <a href="https://max.ru/id1800048162_1_bot" target="_blank" rel="noopener" class="btn-primary">📤 Отправить резюме</a>
-                        <p class="link">Бот: <a href="https://max.ru/id1800048162_1_bot" target="_blank" rel="noopener">@id1800048162_1_bot</a></p>
+                        <h2 id="cta-title">Забота и профессионализм рядом с домом</h2>
+                        <p>Запишитесь в предварительный список и мы оповестим вас о дне открытия</p>
+                        <a href="https://max.ru/id1800048162_1_bot" target="_blank" rel="noopener" class="btn-primary">📝 Лист ожидания</a>
+                        <p class="link">Канал: <a href="https://max.ru/join/56sp6ngnZou3IeaUAUqfiopUefYBUMacUwg1ExkHAa8" target="_blank" rel="noopener">Макс</a></p>
                     </div>
                 </div>
             </div>
@@ -344,9 +411,9 @@
         <p>© 2026 ООО «Фельдшер и Ко»</p>
         <p>🤖 <a href="https://max.ru/id1800048162_1_bot" target="_blank" rel="noopener">@id1800048162_1_bot</a> · 📧 feldland@yandex.ru</p>
         <div class="footer-links">
-            <a href="https://max.ru/join/rre51qvmREhGKRnNFf4vcVZ_U3mj_obCY8L2wNHAxo8" target="_blank" rel="noopener">Макс</a>
+            <a href="https://max.ru/join/56sp6ngnZou3IeaUAUqfiopUefYBUMacUwg1ExkHAa8" target="_blank" rel="noopener">Макс</a>
             <span>·</span>
-            <a href="https://vk.com/feldsherizh" target="_blank" rel="noopener">ВК</a>
+            <a href="https://vk.com/feldsherryadom" target="_blank" rel="noopener">ВК</a>
             <span>·</span>
             <a href="legal.html">Правовая информация</a>
             <span>·</span>
@@ -359,11 +426,14 @@
             document.getElementById('navButtons').classList.toggle('open');
             document.getElementById('burger').classList.toggle('active');
         }
+        // Закрыть меню при клике вне его
         document.addEventListener('click', function(e) {
             const nav = document.querySelector('nav');
+            const burger = document.getElementById('burger');
+            const navButtons = document.getElementById('navButtons');
             if (!nav.contains(e.target)) {
-                document.getElementById('navButtons').classList.remove('open');
-                document.getElementById('burger').classList.remove('active');
+                navButtons.classList.remove('open');
+                burger.classList.remove('active');
             }
         });
     </script>

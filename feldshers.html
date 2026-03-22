@@ -103,8 +103,11 @@
         .badge { display: inline-block; background: linear-gradient(135deg, #1E3A5F 0%, #2D4A6F 100%); color: white; padding: 6px 14px; border-radius: 20px; font-size: 13px; margin-bottom: 12px; }
         .hero-title { font-size: 32px; font-weight: bold; line-height: 1.2; margin-bottom: 16px; }
         .hero-text { color: #666; font-size: 16px; margin-bottom: 20px; }
+        .buttons { display: flex; gap: 10px; flex-wrap: wrap; }
         .btn-primary { background: linear-gradient(135deg, #1E3A5F 0%, #2D4A6F 100%); color: white; padding: 14px 24px; border-radius: 10px; text-decoration: none; font-weight: 500; font-size: 15px; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 8px 24px rgba(30,58,95,0.25); transition: all 0.2s; }
         .btn-primary:hover { box-shadow: 0 12px 32px rgba(30,58,95,0.35); transform: translateY(-2px); }
+        .btn-secondary { background: white; border: 2px solid #e5e5e5; padding: 12px 20px; border-radius: 10px; text-decoration: none; font-weight: 500; font-size: 15px; color: #333; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s; }
+        .btn-secondary:hover { border-color: #1E3A5F; }
         
         @media (max-width: 600px) {
             .hero { padding: 32px 12px; }
@@ -242,7 +245,10 @@
                     <span class="badge">🚀 Скоро открытие в Ижевске</span>
                     <h2 id="hero-title" class="hero-title">Проект «Фельдшеръ.Рядом» <span class="text-gradient">приглашает в команду</span></h2>
                     <p class="hero-text">Мы открываем кабинет в одном из районов Ижевска и хотим, чтобы наши сотрудники работали с удовольствием, а не до изнеможения.</p>
-                    <a href="https://max.ru/id1800048162_1_bot" target="_blank" rel="noopener" class="btn-primary">📤 Отправить резюме</a>
+                    <div class="buttons">
+                        <a href="https://max.ru/id1800048162_1_bot" target="_blank" rel="noopener" class="btn-primary">📤 Отправить резюме</a>
+                        <a href="https://max.ru/join/rre51qvmREhGKRnNFf4vcVZ_U3mj_obCY8L2wNHAxo8" target="_blank" rel="noopener" class="btn-secondary">💬 Канал</a>
+                    </div>
                 </div>
                 <article class="search-card">
                     <h3>Мы ищем фельдшеров, которые:</h3>
